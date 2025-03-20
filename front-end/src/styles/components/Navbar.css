@@ -1,0 +1,96 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid var(--primary-color);
+  padding: var(--spacing-medium);
+  gap: var(--spacing-medium);
+  width: 100%;
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+
+    li {
+      width: 100%;
+
+      a {
+        font-size: 1rem;
+        color: var(--text);
+        text-decoration: none;
+        display: block;
+        padding: var(--spacing-small) 0;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+
+        &.active {
+          color: var(--primary-color);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    box-sizing: border-box;
+    align-items: center;
+
+    .theme-button,
+    .language-button,
+    .user-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-small);
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    .language-dropdown {
+      position: relative;
+
+      .dropdown-content {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--background);
+        border: 1px solid var(--neutral-color);
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: max-content;
+        min-width: 120px;
+
+        .dropdown-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 12px;
+          cursor: pointer;
+          transition: background 0.2s ease-in-out;
+
+          &:hover {
+            background: var(--neutral-color);
+          }
+        }
+      }
+    }
+  }
+}

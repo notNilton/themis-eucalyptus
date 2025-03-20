@@ -1,0 +1,33 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-small);
+
+  h1 {
+    font-size: 2rem;
+    color: var(--negative-color); /* Usa a cor negativa global */
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: var(--text);
+  }
+
+  .back-button {
+    padding: var(--spacing-small) var(--spacing-medium);
+    background-color: var(--neutral-color); /* Cor neutra para um botão básico */
+    color: var(--text);
+    border: none;
+    border-radius: var(--spacing-small);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--button-hover-border);
+    }
+  }
+}

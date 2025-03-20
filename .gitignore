@@ -1,0 +1,155 @@
+# ==============================
+# Node.js / TypeScript / React
+# ==============================
+
+# Dependencies
+node_modules/
+.pnpm/
+.pnp.cjs
+.pnp.loader.mjs
+
+# Build output
+build/
+dist/
+.out/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.iml
+
+# Optional caches
+.eslintcache
+.stylelintcache
+
+# Jest / Testing
+coverage/
+.jest/
+jest/
+
+# Cypress (E2E Testing)
+cypress/screenshots/
+cypress/videos/
+cypress/reports/
+cypress/logs/
+
+# Parcel cache
+.cache/
+
+# Storybook
+.storybook/
+.storybook-static/
+
+# Expo / React Native
+.expo/
+.expo-shared/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+static/
+
+# SvelteKit
+.svelte-kit/
+
+# Netlify
+.netlify/
+netlify.toml
+
+# ==============================
+# Golang
+# ==============================
+
+# Binaries
+*.exe
+*.out
+*.test
+*.o
+
+# Build directories
+bin/
+pkg/
+build/
+
+# Dependency files
+go.sum
+go.work
+go.work.sum
+
+# IDE specific files
+*.vscode/
+.idea/
+*.iml
+
+# Go test caches
+*.test
+
+# Local environment settings
+.env
+.env.*.local
+.env.local
+
+# ==============================
+# SQLite
+# ==============================
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# SQLite backup files
+*.db.backup
+*.db-journal
+
+# Specific database files
+webapp-server/db/database.db
+
+# ==============================
+# OS and Miscellaneous
+# ==============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+.Trash-*
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.lock
+*.backup
+*~
